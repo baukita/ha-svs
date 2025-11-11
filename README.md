@@ -19,6 +19,24 @@ Works with ESPHome Bluetooth proxies.
 
 ## Installation
 
+### HACS (Recommended)
+
+1. Open HACS in your Home Assistant instance
+2. Click on "Integrations"
+3. Click the three dots in the top right corner
+4. Select "Custom repositories"
+5. Add the repository URL: `https://github.com/baukita/ha-svs`
+6. Select category: "Integration"
+7. Click "Add"
+8. Search for "SVS Subwoofer" in HACS
+9. Click "Download"
+10. Restart Home Assistant
+11. Go to Settings > Devices & Services > Add Integration
+12. Search for "SVS Subwoofer"
+13. Select your subwoofer from the discovered devices
+
+### Manual Installation
+
 1. Copy the `custom_components/svs_subwoofer` directory to your Home Assistant `config/custom_components/` directory
 
 2. Restart Home Assistant
