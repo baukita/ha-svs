@@ -2,7 +2,7 @@
 from typing import Final
 
 DOMAIN: Final = "svs_subwoofer"
-PLATFORMS: Final = ["media_player"]
+PLATFORMS: Final = ["media_player", "select"]
 
 # Bluetooth characteristic UUID for SVS subwoofer
 CHAR_UUID: Final = "6409d79d-cd28-479c-a639-92f9e1948b43"

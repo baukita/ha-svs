@@ -39,8 +39,6 @@ class SVSMediaPlayer(CoordinatorEntity[SVSCoordinator], MediaPlayerEntity):
     _attr_supported_features = (
         MediaPlayerEntityFeature.VOLUME_SET
         | MediaPlayerEntityFeature.VOLUME_STEP
-        | MediaPlayerEntityFeature.TURN_ON
-        | MediaPlayerEntityFeature.TURN_OFF
     )
 
     def __init__(self, coordinator: SVSCoordinator, entry: ConfigEntry) -> None:
@@ -98,16 +96,6 @@ class SVSMediaPlayer(CoordinatorEntity[SVSCoordinator], MediaPlayerEntity):
         if current_volume is not None and current_volume > 0.0:
             new_volume = max(0.0, current_volume - 0.05)
             await self.async_set_volume_level(new_volume)
-
-    async def async_turn_on(self) -> None:
-        """Turn the media player on."""
-        # Set to ON mode (standby mode 2)
-        await self.coordinator.device.set_standby(2)
-
-    async def async_turn_off(self) -> None:
-        """Turn the media player off."""
-        # Set to AUTO ON mode (standby mode 0) - most power-efficient
-        await self.coordinator.device.set_standby(0)
 
     @property
     def extra_state_attributes(self) -> dict[str, Any]:

@@ -7,7 +7,7 @@ Works with ESPHome Bluetooth proxies.
 ## Features
 
 - Volume control with native Home Assistant media player interface
-- Power on/off (standby mode control)
+- Standby mode selection (Auto On, Trigger, On)
 - Real-time state updates via Bluetooth notifications
 - Additional attributes exposed (phase, polarity, filters, etc.)
 - Automatic device discovery via Bluetooth
