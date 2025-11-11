@@ -1,0 +1,27 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Select SVS Subwoofer",
+        "description": "Select your SVS Subwoofer from the list of discovered devices.",
+        "data": {
+          "address": "Device"
+        }
+      },
+      "confirm": {
+        "title": "Add SVS Subwoofer",
+        "description": "Do you want to add {name} to Home Assistant?"
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the device. Make sure the subwoofer is powered on and in range.",
+      "no_devices_found": "No SVS Subwoofer devices found. Make sure your device is powered on and Bluetooth is enabled.",
+      "unknown": "Unexpected error occurred"
+    },
+    "abort": {
+      "already_configured": "This device is already configured",
+      "cannot_connect": "Failed to connect to the device",
+      "no_devices_found": "No compatible devices found"
+    }
+  }
+}

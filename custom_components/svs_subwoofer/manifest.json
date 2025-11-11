@@ -1,0 +1,18 @@
+{
+  "domain": "svs_subwoofer",
+  "name": "SVS Subwoofer",
+  "version": "1.0.0",
+  "codeowners": ["@baukita"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/baukita/ha-svs",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "requirements": ["bleak>=0.21.0", "bleak-retry-connector>=3.0.0"],
+  "bluetooth": [
+    {
+      "service_uuid": "1fee6acf-a826-4e37-9635-4d8a01642c5d",
+      "connectable": true
+    }
+  ]
+}
