@@ -4,6 +4,10 @@ A custom Home Assistant integration for controlling SVS subwoofers via Bluetooth
 
 Works with ESPHome Bluetooth proxies.
 
+## Important Note
+
+**The subwoofer can only maintain one Bluetooth connection at a time.** If the SVS mobile app is connected to your subwoofer, Home Assistant will fail to connect. Similarly, if Home Assistant is connected, the mobile app will not be able to connect. Make sure to disconnect the mobile app before adding the integration, and to disable the device in Home Assistant before attempting to use the SVS app.
+
 ## Features
 
 - Volume control with native Home Assistant media player interface
